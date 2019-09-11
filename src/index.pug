@@ -3,8 +3,12 @@ html
     head
         title The Best Holiday for You
     body
-        h1 Here you need put your budget
-        .budget
+        .container
+            h1 Here you need put your budget
+            input(type="text" id= 'messageIn')
+            button(onclick="myFunction()" id='button') Send
+            .messageOut
+                h1
         script
             include script.js
         if config.entry.css.external

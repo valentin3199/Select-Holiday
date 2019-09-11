@@ -1,25 +1,30 @@
-const addNumberContainer = document.querySelector('budget')
+const sendBtn = document.querySelector('button');
+const messageIn = document.querySelector('messageIn');
+const messageOut = document.querySelector('.messageOut');
 
-var Holiday1 = {
-  name: 'Dubai'
-  budget: 3000
-}
-var Holiday2 = {
-  name: 'Dubai'
-  budget: 6000
-}
-
-function calculateCost (holiday){
-  
-}
-
-
-
+// var holiday1 = {
+//   name: 'Dubai',
+//   budget: 2500,
+// };
+// var holiday2 = {
+//   name: 'Dubai',
+//   budget: 500,
+// };
+// var holiday3 = { 
+//   name: 'Dubai',
+//   budget: 300,
+// };
+// var holiday = holiday1 + holiday2 + holiday3;
 
 
-// Array 
-//   const holiday = document.createElement('div')
-//   const name = 'Dubai'
-//   const budget = '$'2500
-//   holiday.innerText =  name, budget 
 
+// function all(holiday) {
+//   if(holiday.budget < messageIn){
+//   }
+
+// }
+
+// // function sendMsg (){
+// //   let content = messageIn.value;
+// //   messageOut.innerHTML = content;
+// // }
