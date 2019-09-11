@@ -1,6 +1,21 @@
 const sendBtn = document.querySelector('button');
 const messageIn = document.querySelector('messageIn');
-const messageOut = document.querySelector('.messageOut');
+const messageOut = document.querySelector('messageOut');
+
+sendBtn.addEventListener('click', sendMsg)
+
+function sendMsg(){
+  const content = messageIn.value;
+  console.log(content);
+}
+
+
+
+
+
+
+
+
 
 // var holiday1 = {
 //   name: 'Dubai',
