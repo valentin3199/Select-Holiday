@@ -1,45 +1,15 @@
-const sendBtn = document.querySelector('button');
-const messageIn = document.querySelector('messageIn');
-const messageOut = document.querySelector('messageOut');
-
-sendBtn.addEventListener('click', sendMsg)
-
-function sendMsg(){
-  const content = messageIn.value;
-  console.log(content);
-}
-
-
-
-
-
-
-
-
-
-// var holiday1 = {
-//   name: 'Dubai',
-//   budget: 2500,
-// };
-// var holiday2 = {
-//   name: 'Dubai',
-//   budget: 500,
-// };
-// var holiday3 = { 
-//   name: 'Dubai',
-//   budget: 300,
-// };
-// var holiday = holiday1 + holiday2 + holiday3;
-
-
-
-// function all(holiday) {
-//   if(holiday.budget < messageIn){
-//   }
-
+// function exVali(a) {
+//   var happy = 'I am Vali' + a;
+//   return happy;
 // }
 
-// // function sendMsg (){
-// //   let content = messageIn.value;
-// //   messageOut.innerHTML = content;
-// // }
+// var name = 'val'
+// console.log(exVali(name));
+
+var exVali = function(a) {
+  var greeting = 'Hi! My name is ' + a;
+  return  greeting
+}
+
+var a = 'Apple'
+console.log(exVali(a));
