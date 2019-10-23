@@ -3,7 +3,13 @@ html
     head
         title The Best Holiday for You
     body
-        script
-            include script.js
-        if config.entry.css.external
-            link(rel="stylesheet", href=`${baseUrl}style.css`)
+        p Name
+        input.first(type="text")
+        p Age
+        input.second(type="text")
+        button(type='button' onclick='see()') MAMA
+        #result
+    script
+        include script.js
+    if config.entry.css.external
+        link(rel="stylesheet", href=`${baseUrl}style.css`)

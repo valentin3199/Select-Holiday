@@ -1,15 +1,6 @@
-// function exVali(a) {
-//   var happy = 'I am Vali' + a;
-//   return happy;
-// }
-
-// var name = 'val'
-// console.log(exVali(name));
-
-var exVali = function(a) {
-  var greeting = 'Hi! My name is ' + a;
-  return  greeting
+function see() {
+    var fr = document.querySelector('.first');
+    var sc =document.querySelector('.second');
+    var frsc = fr + sc;
+    document.querySelector('#result').innerHtml = frsc;
 }
-
-var a = 'Apple'
-console.log(exVali(a));
