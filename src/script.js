@@ -1,6 +1,112 @@
+const person = {
+    firstName: 'Valentin',
+}
+
+let val;
+
+val = person;
+//Get specific value
+val = person.firstName
+val = person
+
+console.log(val);
+
+
+
+/*
+const numbers = [42,32,54,3,2,66,]
+const number2 = new Array(22,44,65,77);
+const fruit = ['Apple','Banana', 'Orange'];
+const mixed = [22, 'Hello', true, undefined, null, {a:1, b:1}, new Date()];
+
+let val;
+//Get array length
+val = numbers.length;
+//Check if is array
+val = Array.isArray(numbers);
+//Get single value
+val = numbers[3];
+val = numbers[0];
+//Insert into Array
+numbers[2] = 100;
+//Find index of value
+val = numbers.indexOf(66);
+
+//MUTATING ARRAYS
+//Add on to end
+numbers.push(250);
+//Add on to front
+numbers.unshift(120);
+//Take off from end
+numbers.pop();
+//Take off from front
+numbers.shift();
+//Splice values
+numbers.splice(1,1);
+//Reverse
+numbers.reverse();
+
+//Sorting arrays
+val = fruit.sort();
+val = numbers.sort();
+
+//Use the "compare function"
+val = numbers.sort(function(x,y){
+    return x - y;
+});
+
+//Reverse sort
+val = numbers.sort(function(x,y){
+    return y - x;
+});
+
+//Find
+function under50(num){
+    return num < 50;
+}
+val = numbers.find(over50);
+
+console.log(numbers);
+console.log(val);
+////////////////DOM///DOM......DOM DOM DOM DOM//////
+const name = 'Valentin';
+const age = 20;
+const job = 'Web Developer';
+const city = 'London';
+let html;
+
+//Without template strings(es5)
+html = '<ul><li>Name: '+ name +'</li><li>Age: '+ age +'</li><li>Job: '+ job +'</li><li>City: '+ city +'</li></ul>';
+//or
+html = '<ul>' +
+        '<li>Name: '+ name +'</li>' +
+        '<li>Age: '+ age +'</li>' +
+        '<li>Job: '+ job +'</li>' +
+        '<li>City: '+ city +' Chingford</li>'
+||||||||||||||||||||||||||||||
+//with template string
+
+function hello(){
+    return 'hello';
+}
+
+html = `<ul>
+    <li>Name: ${name}</li>
+    <li>Age: ${age}</li>
+    <li>Job: ${job}</li>
+    <li>City: ${city}</li>
+    <li>${2 + 2}</li>
+    <li>${hello()}</li>
+    <li>${age > 30 ? 'Over 30 ' : 'Under 30'}</li>
+</ul>`;
+
+document.body.innerHTML = html;
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
 const firstName = 'Valentin';
 const lastName = 'Nicolae';
 var age = 23;
+const tags = 'Web design,web '
 
 let val;
 
@@ -8,15 +114,24 @@ val = firstName+ ' ' + lastName;
 //Append
 val = 'Babi';
 val += 'Brasov';//ADD
-
 val = 'Hello, my name is ' + firstName + ' si da ' + age;
+
 //Escaping
 val = 'That\'s the best.I can\'t put wait';
+
 //Length
 val = firstName.length;
 
+//Get last character
+val = firstName.charAt(firstName.length -1);
+
+//Split
+val = tags.split(',')
+
+//Replace()
+val = str.replace('Brad','Jack')
+
 console.log(val);
-/*
 ||||||||||||||||||||
 const first =  String(1);
 const second = 2;
