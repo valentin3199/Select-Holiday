@@ -1,6 +1,21 @@
+const firstName = 'Valentin';
+const lastName = 'Nicolae';
+var age = 23;
 
+let val;
 
+val = firstName+ ' ' + lastName;
+//Append
+val = 'Babi';
+val += 'Brasov';//ADD
 
+val = 'Hello, my name is ' + firstName + ' si da ' + age;
+//Escaping
+val = 'That\'s the best.I can\'t put wait';
+//Length
+val = firstName.length;
+
+console.log(val);
 /*
 ||||||||||||||||||||
 const first =  String(1);
