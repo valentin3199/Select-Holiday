@@ -1,13 +1,29 @@
 const person = {
     firstName: 'Valentin',
+    lastName: 'Smith',
+    age:30,
+    email:'valentin @yahoo.com',
+    hobbies: ['music', 'sports'],
+    address: {
+        city:'Miami',
+        state:'FL'
+    },
+    getBirthYear: function(){
+        return 1987 -this.age;
+    }
 }
 
 let val;
 
 val = person;
 //Get specific value
-val = person.firstName
-val = person
+val = person.firstName;
+val = person['firstName'];
+val = person.age;
+val = person.hobbies;
+val = person.address.state;
+val = person.address['city'];
+val = person.getBirthYear();
 
 console.log(val);
 
