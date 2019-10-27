@@ -6,27 +6,27 @@
 /*
 // //FOR LOOP
 
-// for(let i = 0; i < 10; i++){
-//     if(i === 3){
-//         console.log('3 is my favorite number');
-//         continue;
-//     }
-//     if(i ===5){
-//         console.log('Stop de loop')
-//         break;
-//     }
-//     console.log('Number' + i)
-// }
+for(let i = 0; i < 10; i++){
+    if(i === 3){
+        console.log('3 is my favorite number');
+        continue;
+    }
+    if(i ===5){
+        console.log('Stop de loop')
+        break;
+    }
+    console.log('Number' + i)
+}
 
-//WHILE LOOP
+WHILE LOOP
 
-// let i = 0;
-// while(i < 10){
-//     console.log('Number' + i);
-//     i++;
-// }
-/////////////////////
-//DO WHILE
+let i = 0;
+while(i < 10){
+    console.log('Number' + i);
+    i++;
+}
+///////////////////
+DO WHILE
 
 // let i = 0;
 // do{
