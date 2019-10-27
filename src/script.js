@@ -1,17 +1,79 @@
-function greet(firstName = ' Joe', lastName = ' David'){
-    //console.log('Hello');
-    return 'Hello' + firstName + lastName;
-}
-console.log(greet());
-
 
 
 
 
 
 /*
-aaaa
+// //FOR LOOP
 
+// for(let i = 0; i < 10; i++){
+//     if(i === 3){
+//         console.log('3 is my favorite number');
+//         continue;
+//     }
+//     if(i ===5){
+//         console.log('Stop de loop')
+//         break;
+//     }
+//     console.log('Number' + i)
+// }
+
+//WHILE LOOP
+
+// let i = 0;
+// while(i < 10){
+//     console.log('Number' + i);
+//     i++;
+// }
+/////////////////////
+//DO WHILE
+
+// let i = 0;
+// do{
+//     console.log('Number ' + i);
+//     i++
+// }
+// while(i < 10);
+//LOOP THROUGH ARRAY
+const cars = ['Ford','Chevy', 'Honda', 'Toyota'];
+// for(let i = 0; i < cars.length; i++){
+//     console.log(cars[i]);
+// }
+
+// // Foreach
+// cars.forEach(function(car, index, array){
+//     console.log('${index} : ${car}');
+//     console.log(array);
+//     // console.log(index);
+// });
+///Map
+// const users = [
+//     {id: 1, name:'Jhon'},
+//     {id: 2, name: 'Chris'},
+//     {id: 3, name: 'Valentin'}
+//     {id: 4, name: 'Steve'}
+// ];
+// const ids = users.map(function(user){
+//     return user.id;
+// });
+// console.log(ids);
+
+const user = {
+    firstName: 'Valentin',
+    lastName: 'Nico',
+    age: 20 
+}
+
+for(let i in user){
+    console.log(`${i} : ${user[i]}`);
+}
+||||||||||||||||||||||||||||||||||||
+function greet(firstName = ' Joe', lastName = ' David'){
+    //console.log('Hello');
+    return 'Hello' + firstName + lastName;
+}
+console.log(greet());
+////////////////////////
 // const color = 'red';
 // switch(color){
     //     case 'red':
