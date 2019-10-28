@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 html
     head
-        title The Best Holiday for You
+        title The Best Test
     body
-    h1 Ana has apples
+    .container
+        .row
+            .col.s12
+            #main.card
+                .card-content
+                span.card-title Task List
+                .row
+                    form#task-form
+                    .input-field.col.s12
+                        input#task(type='text' name='task' value='Walk the dog')
+                        label.active(for='task') New Task
+                input.btn(type='submit' value='Add Task')
+                .card-action
+                h5#task-title Tasks
+                ul.collection
+                    li.collection-item(style='color: blue; background: rgb(204, 204, 204);')
+                    | List Item
+                    a.delete-item.secondary-content(href='#')
+                        i.fa.fa-remove
+                    li.collection-item(style='background: rgb(244, 244, 244);')
+                    | List Item
+                    a.delete-item.secondary-content(href='#')
+                        i.fa.fa-remove
+                    li.collection-item(style='color: yellow;')
+                    | List Item
+                    a.delete-item.secondary-content(href='#')
+                        i.fa.fa-remove
+                    li.collection-item Hello World
+                    li.collection-item(style='color: red;')
+                    | List Item
+                    a.delete-item.secondary-content(href='#')
+                        i.fa.fa-remove
+                a.clear-tasks.btn.black(href='') Clear Tasks
+
+
+
     script
         include script.js
     if config.entry.css.external

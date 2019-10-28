@@ -1,3 +1,126 @@
+let val;
+
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
+
+val = listItem;
+val = list;
+
+//Get child nodes
+val = list.childNodes; 
+val =list.childNodes[0];
+val =list.childNodes[0].nodeName;
+val =list.childNodes[1].nodeType;
+
+//Get children element nodes
+val = list.children;
+val = list.children[1];
+list.children[1].textContent = 'Hello';
+//Children of children
+val = list.children[3].children[0].id = 'test-link'
+val = list.children[3].children[0];
+//First ellement
+val = list.firstChild;
+val = list.firstElementChild;
+//Last element child
+val =list.lastChild;
+val = list.lastElementChild;
+// Count child elements
+val = list.childElementCount;
+//
+
+console.log(val);
+
+
+
+
+
+/*
+//GetElementByClassName
+// const items = document.getElementsByClassName('colletction-item');
+// console.log(items);
+// console.log(items[0]);
+///////////////////////////////
+// const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+// console.log(listItems);
+///////////////////////////
+// const items =  document.getElementsByTagName('li');
+// console.log(items);
+// items[1].style.backgroundColor = 'red';
+// items[2].textContent = 'Hey';
+///////////////////////
+//Connverte HTML Collection into array
+// lis = Array.from(lis)
+
+// lis.reverse()
+
+// lis.forEach(function(li, index){
+//     console.log(li.className);
+//     li.textContent = `${index}: Hello`;
+// });
+
+// console.log(lis)
+
+//document.querySelectorAll
+// const items = document.querySelectorAll('ul.collection li.collection-item');
+// items.forEach(function(li, index){
+//     console.log(li.className);
+//     li.textContent.Conent = `${index}: Hello`
+// });
+// const li0dd = doc
+// console.log(items);
+
+// //Document by id
+// console.log(document.getElementById('task-title'));
+
+// //Get things from the element
+// console.log(document.getElementById('task-title').className);
+
+// //Change styling
+// document.getElementById('task-title').style.backgroundColor = 'red';
+// document.getElementById('task-title').style.color = 'blue';
+
+// //Change content
+// document.getElementById('task-title').textContent = 'Task Llist';
+// document.getElementById('task-title').innerText = 'My tasks';
+// document.getElementById('task-title').innerHTML = 'Task Llist';
+
+// const taskTitle = document.getElementById('task-title');
+
+// //Document.QUERYSELECTOR()
+// console.log(document.querySelector('#task-title'));
+// console.log(document.querySelector('.card-title'));
+// console.log(document.querySelector('h5'));
+
+// document.querySelector('li').style.backgroundColor = 'black';
+// //Select the last
+// document.querySelector('li;last child').style.backgroundColor = 'black';
+
+//Global Scope
+var a = 1;
+let b = 2;
+const c = 3;
+
+// function val() {
+//     var a = 5;
+//     let b = 4;
+//     const c = 2;
+//     console.log('Function Scope', a, b, c);
+// }
+// val();
+// if(true) {
+//     //Block Scope
+//     var a = 4;
+//     let b = 5;
+//     const c = 1;
+//     console.log('Block Scope', a, b, c);
+// }
+
+// for(let a = 0; a < 10; a++){
+//     console.log(`Loop: ${a}`)
+// }
+///////////////////////////////////////////////////////
+// console.log('Global Scope:', a, b, c);
 // //Window Methods /Objects /Properties
 // console.log(123);
 // \\\\\\\\
@@ -26,14 +149,6 @@ val = window.scrollY;
 
 console.log(val);
 
-
-
-
-
-
-
-
-/*
 // //FOR LOOP
 
 for(let i = 0; i < 10; i++){
