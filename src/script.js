@@ -1,3 +1,33 @@
+// //Window Methods /Objects /Properties
+// console.log(123);
+// \\\\\\\\
+// // //Alert
+// // alert('Hello World')
+// \\\\\\\\\
+// //Promt
+// // const input = prompt();
+// // alert(input);
+// \\\\\\\\\\\\\
+// //Confirm
+// // if(confirm('Are you ok')){
+// //     console.log('Yes');
+// // }else{
+// //     console.log('NO')
+// // }
+// \\\\\\\\\\
+
+let val;
+//Outter heigfht and witdth
+val = window.outerHeight;
+val = window.outerWidth;
+//Scroll points
+val = window.scrollY;
+
+
+console.log(val);
+
+
+
 
 
 
