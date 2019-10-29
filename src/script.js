@@ -1,3 +1,73 @@
+import { functionExpression } from "@babel/types";
+
+// //EVENT BUBBLING
+// document.querySelector('.card-title').addEventListener('click',
+// function(){
+//     console.log('card title');
+// });
+
+// document.querySelector('.card-content').addEventListener('click',
+// function(){
+//     console.log('card-content')
+// });
+
+// document.querySelector('.card').addEventListener('click',
+// function(){
+//     console.log('card')
+// });
+
+// document.querySelector('.col').addEventListener('click',
+// function(){
+//     console.log('col')
+// });
+
+const delItem = document.querySelector('.delete-item');
+
+delItem.addEventListener('click' deleteItem);
+
+function deleteItem(){
+    console.log('delete item');
+}
+
+
+/*
+const form = document.querySelector('form');
+const taskInput = document.getElementById('task');
+
+//Clear input
+taskInput.value = '';
+// form.addEventListener('submit', runEvent);
+//Keydown
+// taskInput.addEventListener('keydown', runEvent);
+//Keydown
+taskInput.addEventListener('keyup', runEvent);
+
+function runEvent(e){
+    console.log(`Event Type: ${e.type}`);
+
+    console.log(e.target.value);
+    //Get input value
+    // console.log(taskInput.value);
+
+    // e.preventDefault();
+}
+const clearBtn = document.querySelector('.clear-tasks');
+const card = document.querySelector('.card');
+const heading = document.querySelector('h5');
+
+//Click
+clearBtn.addEventListener('click', runEvent);
+//Double click
+clearBtn.addEventListener('dblclick', runEvent);
+//MouseDown
+clearBtn.addEventListener('mousedown', runEvent)
+
+//Event Handler
+function runEvent(e){
+    console.log(`EVENT TYPE ${e.type}`);
+}
+
+
 // document.querySelector('.clear-tasks').addEventListener('click', function(e){
 //     console.log('Hello World');
 
@@ -28,8 +98,6 @@ function onClick(e){
     console.log(val);
 }
 
-
-/*
 //Create ELEMENT
 const li = document.createElement('li');
 
