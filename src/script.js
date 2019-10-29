@@ -1,3 +1,62 @@
+// document.querySelector('.clear-tasks').addEventListener('click', function(e){
+//     console.log('Hello World');
+
+//     e.preventDefault();
+// });
+//////////////////
+document.querySelector('.clear-tasks').addEventListener('click', onClick);
+function onClick(e){
+    console.log('Clicked')
+
+    let val;
+
+    val = e;
+
+    //Event target element
+    val = e.target;
+    val = e.taget.id;
+    val = e.target.className;
+    vall = e.target.classList;
+
+    //Event type
+    val = e.type;
+    //Timestamp
+    val = e.timeStamp
+    //Coord event relative to the window
+    val = e.offsetY;
+    val = e.offsetX;
+    console.log(val);
+}
+
+
+/*
+//Create ELEMENT
+const li = document.createElement('li');
+
+//ADD CLASS
+li.className = 'collection-item'
+
+//add id
+li.id = 'new-item';
+
+//ADD-ATRIBUTE
+li.setAttribute('title','New Item');
+
+//Create text node and append child
+li.appendChild(document.createTextNode('Hello World'));
+//Create new link element
+const link = document.createElement('a');
+//ADD className
+link.className = 'delete-item secondary-content'  
+//ADD ICON HTML
+link.innerHTML = '<i class="fa fa-remove"></i>';
+
+//Append link into li
+li.appendChild(link);
+//Append li as child to ul
+document.querySelector('ul,collection').appendChild(li);
+
+console.log(li);
 let val;
 
 const list = document.querySelector('ul.collection');
@@ -16,26 +75,31 @@ val =list.childNodes[1].nodeType;
 val = list.children;
 val = list.children[1];
 list.children[1].textContent = 'Hello';
+
 //Children of children
 val = list.children[3].children[0].id = 'test-link'
 val = list.children[3].children[0];
+
 //First ellement
 val = list.firstChild;
 val = list.firstElementChild;
+
 //Last element child
 val =list.lastChild;
 val = list.lastElementChild;
+
 // Count child elements
 val = list.childElementCount;
-//
+
+//Get parents node
+val = listItem.parentNode;
+val = listItem.parentElement.parentElement;
+
+//Get next sibling
+val = listItem.nextSibling;
 
 console.log(val);
 
-
-
-
-
-/*
 //GetElementByClassName
 // const items = document.getElementsByClassName('colletction-item');
 // console.log(items);
